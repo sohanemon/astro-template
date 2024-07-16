@@ -1,8 +1,9 @@
 ---
-import '@/styles/globals.css';
+import "@/styles/globals.css";
+import Provider from "./provider";
 
 interface Props {
-  title: string;
+  title?: string;
 }
 
 const { title } = Astro.props;
@@ -16,9 +17,9 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title || 'Home'} | Astro</title>
+    <title>{title || "Home"} | Astro</title>
   </head>
-  <body>
+  <Provider client:load>
     <slot />
-  </body>
+  </Provider>
 </html>

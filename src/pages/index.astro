@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Button } from "../components/ui/button.tsx";
+import Test from "../components/test.tsx";
 ---
 
-<Layout title="Welcome">
-  <main class="text-9xl text-foreground center-position-x absolute">Hello</main>
-  <Button>Hello</Button>
+<Layout title="Main">
+  <div class="container">
+    <h1 class="text-7xl opacity-0 -translate-y-32" id="hello">Hello World</h1>
+    <Test />
+  </div>
 </Layout>
