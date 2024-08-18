@@ -1,12 +1,12 @@
 ---
-import BaseLayout from "@/layouts/RootLayout.astro";
+import RootLayout from "@/layouts/RootLayout.astro";
 ---
 
-<BaseLayout
+<RootLayout
   title="404 - Not Found"
   description="404 Error — this page was not found"
 >
-  <div class="mt-32 flex flex-col items-center justify-center px-8">
+  <div class="container flex flex-col min-h-svh justify-center items-center">
     <p class="text-sm text-muted-foreground">404</p>
     <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
       Page not found
@@ -14,6 +14,6 @@ import BaseLayout from "@/layouts/RootLayout.astro";
     <p class="mb-4 leading-7 [&:not(:first-child)]:mt-6">
       Sorry, we couldn't find the page you're looking for.
     </p>
-    <a href="/" rel="noreferrer"> Go back home</a>
+    <a href="/" rel="noreferrer" class="hover:text-primary"> Go back home</a>
   </div>
-</BaseLayout>
+</RootLayout>
