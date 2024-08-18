@@ -1,6 +1,7 @@
 ---
 import "@/styles/globals.css";
 import SEO from "@/components/SEO.astro";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
 
 type Props = {
   title?: string;
@@ -15,6 +16,7 @@ const props = Astro.props;
 <html lang="en">
   <head>
     <SEO {...props} />
+    <ViewTransitions />
   </head>
   <body
     class:list={["min-h-screen bg-background font-sans antialiased", "default"]}

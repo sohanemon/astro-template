@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": "Sohan Emon <sohanemon@outlook.com>",
   "scripts": {
-    "dev": "astro dev --port 3000 --host",
+    "dev": "bun --bun astro dev --port 3000 --host",
     "start": "astro dev",
     "clean": "rm -rf build",
     "build": "astro check && astro build",
