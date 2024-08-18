@@ -18,7 +18,6 @@
     "@astrojs/tailwind": "^5.1.0",
     "@astrojs/ts-plugin": "^1.10.0",
     "@astrojs/vercel": "^7.7.2",
-    "@biomejs/biome": "^1.8.3",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -35,6 +34,8 @@
   },
   "devDependencies": {
     "@types/bun": "^1.1.6",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.0",
     "tw-colors": "^3.3.1",
     "typescript": "^5.5.3"
   },

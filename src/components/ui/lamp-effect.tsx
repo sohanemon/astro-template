@@ -20,7 +20,7 @@ export function LampEffect() {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 2 }}
+        transition={{ delay: 1.5 }}
       >
         by Sohan Emon
       </motion.p>
