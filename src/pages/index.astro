@@ -1,11 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Test from "../components/test.tsx";
+import RootLayout from "src/layouts/RootLayout.astro";
 ---
 
-<Layout title="Main">
+<RootLayout title="Home">
   <div class="container">
-    <h1 class="text-7xl opacity-0 -translate-y-32" id="hello">Hello World</h1>
-    <Test />
+    <h1 class="text-7xl text-primary" id="hello">Hello World</h1>
   </div>
-</Layout>
+</RootLayout>

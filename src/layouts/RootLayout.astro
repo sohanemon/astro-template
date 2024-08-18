@@ -1,0 +1,26 @@
+---
+import "@/styles/globals.css";
+import SEO from "@/components/SEO.astro";
+
+type Props = {
+  title?: string;
+  description?: string;
+  ogImage?: URL;
+};
+
+const props = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO {...props} />
+  </head>
+  <body class="min-h-screen bg-background font-sans antialiased">
+    <div class="relative flex min-h-screen flex-col">
+      <main class="flex-auto">
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>
