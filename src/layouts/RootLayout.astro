@@ -16,7 +16,9 @@ const props = Astro.props;
   <head>
     <SEO {...props} />
   </head>
-  <body class="min-h-screen bg-background font-sans antialiased">
+  <body
+    class:list={["min-h-screen bg-background font-sans antialiased", "default"]}
+  >
     <div class="relative flex min-h-screen flex-col">
       <main class="flex-auto">
         <slot />

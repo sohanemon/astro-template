@@ -4,12 +4,10 @@ interface Props {
   description?: string | undefined;
   ogImage?: URL | undefined;
 }
-
-// const canonicalURL = new URL(Astro.url.pathname || "", Astro.site);
-// console.log("test", canonicalURL);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 if (Astro.props.ogImage === undefined) {
-  // Astro.props.ogImage = new URL("og-image.png", canonicalURL);
+  Astro.props.ogImage = new URL("og-image.png", canonicalURL);
 }
 
 const { title, description, ogImage } = Astro.props;
@@ -20,7 +18,7 @@ const { title, description, ogImage } = Astro.props;
 <meta name="googlebot" content="index, follow" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
-<!-- <link rel="canonical" href={canonicalURL} /> -->
+<link rel="canonical" href={canonicalURL} />
 <link
   rel="shortcut icon"
   type="image/svg+xml"
@@ -31,13 +29,13 @@ const { title, description, ogImage } = Astro.props;
 <meta name="description" content={description} />
 
 <meta property="og:type" content="website" />
-<!-- <meta property="og:url" content={canonicalURL} /> -->
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImage} />
 
 <meta property="twitter:card" content="summary_large_image" />
-<!-- <meta property="twitter:url" content={canonicalURL} /> -->
+<meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={ogImage} />
