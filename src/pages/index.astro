@@ -1,17 +1,16 @@
 ---
 import RootLayout from "src/layouts/RootLayout.astro";
 import { Button } from "@/components/ui/button";
+import { LampEffect } from "@/components/ui/lamp-effect";
 ---
 
 <RootLayout title="Home">
-  <div class="container">
-    <center class="text-3xl py-5 block text-primary font-bold"
-      >This is Astro Template</center
-    >
-    <center>
-      <a href="/blog" class="hover:text-primary">
+  <div class="">
+    <LampEffect client:load />
+    <center
+      ><a href="/blog" class="hover:text-primary">
         <Button>Blog</Button>
-      </a>
-    </center>
+      </a></center
+    >
   </div>
 </RootLayout>

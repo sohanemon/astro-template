@@ -1,8 +1,8 @@
 export const colors = {
   default: {
-    background: '#ffffff',
-    foreground: '#000000',
-    primary: '#ff6767',
+    background: '#020617',
+    foreground: '#ffffff',
+    primary: '#22d3ee',
     'primary-foreground': '#f7f9fc',
     card: '#ffffff',
     'card-foreground': '#000000',
