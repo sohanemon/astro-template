@@ -6,7 +6,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   output: "hybrid",
   site: process.env.CI
-    ? "https://astro-template.vercel.app"
+    ? "https://astromotion.vercel.app"
     : "http://localhost:3000",
   integrations: [
     tailwind({
