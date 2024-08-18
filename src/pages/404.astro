@@ -1,4 +1,5 @@
 ---
+import { Button } from "@/components/ui/button";
 import RootLayout from "@/layouts/RootLayout.astro";
 ---
 
@@ -14,6 +15,8 @@ import RootLayout from "@/layouts/RootLayout.astro";
     <p class="mb-4 leading-7 [&:not(:first-child)]:mt-6">
       Sorry, we couldn't find the page you're looking for.
     </p>
-    <a href="/" rel="noreferrer" class="hover:text-primary"> Go back home</a>
+    <a href="/" rel="noreferrer" class="hover:text-primary">
+      <Button variant={"outline"}>Go back home</Button>
+    </a>
   </div>
 </RootLayout>
