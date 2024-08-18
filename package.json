@@ -34,9 +34,10 @@
   },
   "devDependencies": {
     "@types/bun": "^1.1.6",
-    "prettier": "^3.3.3",
-    "prettier-plugin-astro": "^0.14.0",
     "tw-colors": "^3.3.1",
     "typescript": "^5.5.3"
+  },
+  "exports": {
+    "./biome": "./biome.json"
   }
 }
