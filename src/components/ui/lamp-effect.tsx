@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -17,6 +17,13 @@ export function LampEffect() {
       >
         Astro Template
       </motion.h1>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 2 }}
+      >
+        by Sohan Emon
+      </motion.p>
     </LampContainer>
   );
 }
@@ -32,7 +39,7 @@ export const LampContainer = ({
     <div
       className={cn(
         "relative flex min-h-[600px] flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
-        className
+        className,
       )}
     >
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">

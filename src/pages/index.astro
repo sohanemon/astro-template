@@ -2,15 +2,23 @@
 import { Button } from "@/components/ui/button";
 import { LampEffect } from "@/components/ui/lamp-effect";
 import RootLayout from "src/layouts/RootLayout.astro";
+import { GitFork, Book } from "lucide-react";
 ---
 
 <RootLayout title="Home">
   <div class="">
     <LampEffect client:load />
-    <center>
+    <div class="flex justify-center max-w-80 mx-auto gap-3 *:basis-full">
       <a href="/blog" class="hover:text-primary">
-        <Button>Blog</Button>
+        <Button className="w-full"> <Book size={15} /> Blog</Button>
       </a>
-    </center>
+      <a
+        href="https://github.com/sohanemon/astro-template"
+        class="hover:text-primary"
+        target="_blank"
+      >
+        <Button className="w-full"><GitFork size={15} />Github</Button>
+      </a>
+    </div>
   </div>
 </RootLayout>
