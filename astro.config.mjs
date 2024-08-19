@@ -9,10 +9,10 @@ export default defineConfig({
     ? "https://astromotion.vercel.app"
     : "http://localhost:3000",
   integrations: [
+    react(),
     tailwind({
       applyBaseStyles: false,
-    }),
-    react(),
+    })
   ],
   vite: {
     plugins: [],

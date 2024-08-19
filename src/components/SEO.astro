@@ -10,7 +10,7 @@ if (Astro.props.ogImage === undefined) {
   Astro.props.ogImage = new URL("og-image.png", canonicalURL);
 }
 
-const { title, description, ogImage } = Astro.props;
+const { title, description = "Powerful website", ogImage } = Astro.props;
 ---
 
 <meta charset="utf-8" />
