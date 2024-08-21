@@ -18,6 +18,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@astrojs/ts-plugin": "^1.10.0",
     "@astrojs/vercel": "^7.7.2",
+    "@preact/signals-core": "^1.8.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

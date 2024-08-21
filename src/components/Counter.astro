@@ -1,0 +1,31 @@
+<script>
+  let count = 0;
+
+  function update(count: number) {
+    document.querySelector("#value")!.textContent = count.toString();
+  }
+
+  document.getElementById("plus")?.addEventListener("click", increase);
+  document.getElementById("minus")?.addEventListener("click", decrease);
+  function increase() {
+    ++count;
+    update(count);
+  }
+  function decrease() {
+    --count;
+    update(count);
+  }
+</script>
+
+<center class="text-2xl">
+  <div class="font-semibold flex justify-center">
+    <button class="hover:text-primary transition-all hover:scale-150" id="minus"
+      >-</button
+    >
+    <div class="min-w-16" id="value">0</div>
+    <button class="hover:text-primary transition-all hover:scale-150" id="plus"
+      >+</button
+    >
+  </div>
+  <br />
+</center>
