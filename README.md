@@ -29,7 +29,7 @@ npm run start
 To create a new Astro project using this template:
 
 ```bash
-npm create astro@latest -- --template https://github.com/sohanemon/astro-template
+npm create astro@latest -- --template sohanemon/astro-template
 ```
 
 ## Features
