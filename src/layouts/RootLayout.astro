@@ -2,6 +2,7 @@
 import "@/styles/globals.css";
 import SEO from "@/components/SEO.astro";
 import ViewTransitions from "astro/components/ViewTransitions.astro";
+import GotoTop from "@/components/common/GotoTop.astro";
 
 type Props = {
   title?: string;
@@ -25,6 +26,7 @@ const props = Astro.props;
         <slot />
       </main>
     </div>
+    <GotoTop />
   </body>
 </html>
 

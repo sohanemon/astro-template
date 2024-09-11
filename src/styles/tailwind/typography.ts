@@ -6,7 +6,7 @@ const fontVariables = ['--font-sans', '--font-mono'];
 export const typography = plugin(
   ({ addUtilities }) => {
     addUtilities({
-      'text-heading': { '@apply text-3xl font-bold leading-tight': {} },
+      '.text-heading': { '@apply text-3xl font-bold leading-tight': {} },
     });
   },
   {

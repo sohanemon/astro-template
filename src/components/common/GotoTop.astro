@@ -1,0 +1,37 @@
+<button
+  id="goToTopBtn"
+  class="md-bottom-10 md-right-10 md-size-10 fixed bottom-6 right-6 z-40 hidden size-6"
+  title="Go To Top"
+>
+  <div
+    class="hover-bg-primary grid size-full place-content-center rounded-full bg-primary text-foreground shadow-md"
+  >
+    <svg
+      class="md-size-6 size-4"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z"></path>
+    </svg>
+  </div>
+  <span class="sr-only">Go to top</span>
+</button>
+
+<script defer is:inline>
+  const goToTopBtn = document.getElementById("goToTopBtn");
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 700 ||
+      document.documentElement.scrollTop > 700
+    ) {
+      goToTopBtn.classList.remove("hidden");
+    } else {
+      goToTopBtn.classList.add("hidden");
+    }
+  };
+
+  goToTopBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
