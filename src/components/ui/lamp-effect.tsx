@@ -22,7 +22,7 @@ export function LampEffect() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
       >
-        by Sohan Emon
+        by SohanScript
       </motion.p>
     </LampContainer>
   );

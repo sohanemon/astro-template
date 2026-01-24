@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": "Sohan Emon <sohanemon@outlook.com>",
   "scripts": {
-    "dev": "astro dev --port 3000 --host",
+    "dev": "astro dev --port 3001 --host",
     "start": "astro dev",
     "clean": "rm -rf build",
     "build": "astro check && astro build",
@@ -20,6 +20,7 @@
     "@astrojs/vercel": "^9.0.4",
     "@preact/signals-core": "^1.8.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^5.16.15",
@@ -30,7 +31,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss": "^3.4.5",
+    "tailwindcss": "^4.1.18",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
