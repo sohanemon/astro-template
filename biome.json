@@ -1,0 +1,106 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/build",
+      "!**/styles/*.css"
+    ]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "recommended": true
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "includes": ["**", "!**/styles/*.css"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "warn"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "noAriaUnsupportedElements": "warn",
+        "useButtonType": "off",
+        "useKeyWithClickEvents": "warn",
+        "useKeyWithMouseEvents": "warn",
+        "useSemanticElements": "warn",
+        "noStaticElementInteractions": "info",
+        "useAriaPropsSupportedByRole": "warn",
+        "useAltText": "off"
+      },
+      "correctness": {
+        "noChildrenProp": "error",
+        "useExhaustiveDependencies": {
+          "fix": "none",
+          "level": "warn",
+          "options": {}
+        },
+        "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "error",
+        "noEmptyPattern": "warn",
+        "useUniqueElementIds": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off",
+        "noImportantStyles": { "fix": "none", "level": "warn", "options": {} }
+      },
+      "security": {
+        "noDangerouslySetInnerHtmlWithChildren": "error",
+        "noBlankTarget": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noImplicitAnyLet": "warn",
+        "noCommentText": "error",
+        "noUnknownAtRules": "warn",
+        "noArrayIndexKey": "info",
+        "noDuplicateJsxProps": "error",
+        "noNonNullAssertedOptionalChain": "warn",
+        "noConfusingLabels": "off"
+      },
+      "nursery": {
+        "useSortedClasses": {
+          "fix": "safe",
+          "level": "warn",
+          "options": {
+            "attributes": ["classList", "wrapperClassName", "wrapperClass"],
+            "functions": ["clsx", "cva", "cn", "tw", "tw.*"]
+          }
+        }
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double"
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  }
+}

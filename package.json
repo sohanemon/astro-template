@@ -10,6 +10,12 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "check": "biome check .",
+    "fix": "biome check --diagnostic-level=error --write .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format .",
+    "format:write": "biome format . --write",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -35,9 +41,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
     "@types/bun": "^1.1.6",
-    "prettier": "^3.3.3",
-    "prettier-plugin-astro": "^0.14.0",
     "tw-colors": "^3.3.1",
     "typescript": "^5.5.3"
   }
