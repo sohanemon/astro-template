@@ -1,10 +1,10 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel";
 
 export default defineConfig({
-  output: "hybrid",
+  output: "static",
   site: process.env.CI
     ? "https://astromotion.vercel.app"
     : "http://localhost:3000",
@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
     tailwind({
       applyBaseStyles: false,
-    })
+    }),
   ],
   vite: {
     plugins: [],
