@@ -1,0 +1,47 @@
+@theme {
+  --color-background: #020617;
+  --color-foreground: #ffffff;
+  --color-primary: #22d3ee;
+  --color-primary-foreground: #f7f9fc;
+  --color-card: #ffffff;
+  --color-card-foreground: #000000;
+  --color-accent: #f7f7f7;
+  --color-accent-foreground: #0e0e0e;
+  --color-destructive: #f95757;
+  --color-destructive-foreground: #fafafa;
+  --color-border: #e4e4e4;
+  --color-ring: #ff6767;
+  --font-size-xs: clamp(0.64rem, 0.05vw + 0.63rem, 0.67rem);
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-lg: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-xl: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-family-sans: var(--font-sans);
+  --font-family-mono: var(--font-mono);
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --keyframes-accordion-down: {
+    0%: {
+      height: 0;
+    }
+    ,
+    100%: {
+      height: var(--radix-accordion-content-height);
+    }
+  };
+  --keyframes-accordion-up: {
+    0%: {
+      height: var(--radix-accordion-content-height);
+    }
+    ,
+    100%: {
+      height: 0;
+    }
+  };
+  --keyframes-shimmer: {
+    100%: {
+      transform: translateX(100%);
+    }
+  };
+}

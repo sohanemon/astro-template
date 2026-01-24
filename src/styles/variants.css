@@ -1,0 +1,5 @@
+@variant selected :where(&[data-selected=true]);
+@variant open :where(&[data-state=open]);
+@variant on :where(&[data-state=on]);
+@variant keyboard body[data-keyboard='open'] &;
+@variant nth (&:nth-child(<value>));
